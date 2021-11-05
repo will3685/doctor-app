@@ -5,7 +5,8 @@ import { Container } from "react-bootstrap";
 import NavBar from "./Navbar/Navbar";
 import Banner from "./Cards/Banner";
 import AboutCard from "./Cards/AboutCard";
-
+import DestacaCard from "./Cards/DestacaCard";
+import Depoimentos from './Cards/Depoimentos'
 
 const Home = () => {
   return (
@@ -14,7 +15,9 @@ const Home = () => {
       <Banner/>
       <Container>
         <AboutCard />
+        <DestacaCard />
       </Container>
+      <Depoimentos />
     </Fragment>
     
   )
