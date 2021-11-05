@@ -2,6 +2,7 @@ import React from "react"
 
 import { Card, Button, Divider} from 'antd';
 
+import {Image} from 'react-bootstrap'
 import styled from "styled-components";
 import about from "../../../images/about.jpg";
 
@@ -35,7 +36,7 @@ const AboutCard = () => {
         </Card.Grid >
         <Card.Grid 
           hoverable={false}
-          style={{ width: '50%', height: "80vh", backgroundColor: 'gray'}}
+          style={{ width: '50%', height: "80vh", backgroundColor: 'gray', backgroundImage: `url(${about})`}}
           ></Card.Grid>
       </Card>
     </CardContainer>
