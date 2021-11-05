@@ -4,9 +4,9 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-// import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import 'antd/dist/antd.css';
 
 import App from '../components/App'
@@ -14,11 +14,11 @@ import App from '../components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Router>
-      <Routes>
-        <Route path="//*" element={<App />} />
-      </Routes>
-    </Router>,
+      <Router>
+        <Routes>
+          <Route path="*" element={<App />} />
+        </Routes>
+      </Router>,
     document.body.appendChild(document.createElement('div')),
   )
 })

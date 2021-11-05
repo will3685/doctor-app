@@ -7,6 +7,7 @@ import Banner from "./Cards/Banner";
 import AboutCard from "./Cards/AboutCard";
 import DestacaCard from "./Cards/DestacaCard";
 import Depoimentos from './Cards/Depoimentos'
+import Map from "../Map/Map";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <DestacaCard />
       </Container>
       <Depoimentos />
+      <Map />
     </Fragment>
     
   )
