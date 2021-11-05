@@ -4,23 +4,22 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
+// import 'mapbox-gl/dist/mapbox-gl.css';
+// import 'antd/dist/antd.css';
 
-Hello.defaultProps = {
-  name: 'David'
-}
+import App from '../components/App'
 
-Hello.propTypes = {
-  name: PropTypes.string
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <Router>
+      <Routes>
+        <Route path="//*" element={<App />} />
+      </Routes>
+    </Router>,
     document.body.appendChild(document.createElement('div')),
   )
 })
+
