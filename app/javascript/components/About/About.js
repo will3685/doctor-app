@@ -1,8 +1,4 @@
-import React, {Fragment, useEffect} from "react"
-
-
-
-import about from "../../images/about.jpg";
+import React, {Fragment, useEffect} from "react";
 
 import NavBar from "../Home/Navbar/Navbar";
 import Map from "../Map/Map";
