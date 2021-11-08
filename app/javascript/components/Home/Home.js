@@ -5,8 +5,6 @@ import { Container } from "react-bootstrap";
 import NavBar from "./Navbar/Navbar";
 import Banner from "./Cards/Banner";
 import AboutCard from "./Cards/AboutCard";
-import DestacaCard from "./Cards/DestacaCard";
-import Depoimentos from './Cards/Depoimentos'
 import FormPatient from "../Contato/Form";
 import Map from "../Map/Map";
 import Footer from '../Home/Footer'
@@ -24,7 +22,6 @@ const Home = () => {
       <Container>
         <AboutCard />
       </Container>
-      <Depoimentos />
       <FormPatient />
       <Map />
       <Footer />
