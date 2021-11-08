@@ -30,7 +30,7 @@ const AboutCard = () => {
           </Card.Grid >
           <Card.Grid 
             hoverable={false}
-            style={{ width: '50%', height: "80vh", backgroundColor: 'gray', backgroundImage: `url(${about})`}}
+            style={{ width: '50%', height: "80vh", backgroundColor: 'gray', filter: "grayscale(100%)", backgroundImage: `url(${about})`}}
             ></Card.Grid>
         </Card>      
       </CardContainer>
