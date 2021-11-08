@@ -21,10 +21,12 @@ const Minicard = styled.div`
 
 const DestacaCard = () => {
   return (
-    <Minicard>
-      <p style={{ fontSize: 18}}>O Dr. Fleury se destaca por atendimentos em que a escuta e avaliação integral do paciente são prioridades, proporcionando experiências de acolhimento e compromisso com o cuidado continuado. Suas consultas buscam oferecer ao paciente a construção de um relacionamento profissional de confiança e sem julgamentos, gerando empatia e conexão com pessoas das mais diversas características."
-      </p>
-    </Minicard>
+    <div style={{height: "40vh", paddingTop: 24}}> 
+      <Minicard>
+        <p style={{ fontSize: 18}}>O Dr. Fleury se destaca por atendimentos em que a escuta e avaliação integral do paciente são prioridades, proporcionando experiências de acolhimento e compromisso com o cuidado continuado. Suas consultas buscam oferecer ao paciente a construção de um relacionamento profissional de confiança e sem julgamentos, gerando empatia e conexão com pessoas das mais diversas características."
+        </p>
+      </Minicard>
+    </div>
   )
 }
 

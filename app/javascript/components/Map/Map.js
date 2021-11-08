@@ -1,22 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 
+import mapIcon from "../../images/location-pin.png"
+import styled from 'styled-components';
+
+const Img = styled.img`
+  width: 32px;
+`
+
 const Map = () => {
-  const viewport = ({
-    latitude: -22.9831351,
-    longitude: -43.2055487,
+  const [viewport, setViewport] = useState({
+    latitude: -22.9413397,
+    longitude: -43.2522413,
     width: "100%",
-    height: 500,
-    zoom: 12
+    height: 400,
+    zoom: 14
   })
+
+  const coordonate = [-22.9413397, -43.2522413]
 
   return (
     <ReactMapGL
     {...viewport}
+    scrollZoom={false}
     mapboxApiAccessToken={process.env.MAPBOX_API_KEY}
     onViewportChange={(viewport) => setViewport(viewport)}
     mapStyle="mapbox://styles/mapbox/streets-v11"
-  ></ReactMapGL>
+  >
+    <Marker
+      latitude={coordonate[0]}
+      longitude={coordonate[1]}
+    >
+      <Img src={mapIcon} alt="Consultório" />
+    </Marker>
+  </ReactMapGL>
   )
 }
 

@@ -9,27 +9,30 @@ const contentStyle = {
   background: '#efefef'
 };
 
-import styled from "styled-components";
-
-const CarouselWrapper = styled.div`
-  margin: "12px";
-`
-
 const CarouselDepoimentos = () => {
 
   return ( 
       <Carousel autoplay>
         <div>
-          <h3 style={contentStyle}>1</h3>
+          <h3 style={contentStyle}>
+            "Devolver a autoestima a uma mulher negra com toda sua dedicação é inesquecível."
+          </h3>
         </div>
         <div>
-          <h3 style={contentStyle}>2</h3>
+          <h3 style={contentStyle}>
+            "Impecável no que faz e nunca irei esquecer das palavras e carinho que teve comigo!"
+          </h3>
         </div>
         <div>
-          <h3 style={contentStyle}>3</h3>
+          <h3 style={contentStyle}>
+          "Devolver a autoestima a uma mulher com toda sua dedicação é inesquecível.
+          Mil vezes obrigada!"
+          </h3>
         </div>
         <div>
-          <h3 style={contentStyle}>4</h3>
+          <h3 style={contentStyle}>
+          "Todos os dias agradeço pela sua competência, dedicação e carinho dedicado a mim." 
+          </h3>
         </div>
       </Carousel> 
 )

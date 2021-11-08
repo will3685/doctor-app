@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "react-router-dom";
 import { Card, Button, Divider} from 'antd';
 
 import styled from "styled-components";
@@ -24,10 +24,9 @@ const AboutCard = () => {
             <h5>CRM 52-01138707</h5>
             <Divider />
             <p style={{ fontSize: 18}}>Fleury Johnson é médico formado pela Universidade Federal do Rio de Janeiro (UFRJ) e especializando em Clínica Médica pelo hospital Pasteur. Em sua trajetória, aprofundou-se no campo da Saúde da População Negra (doenças prevalentes e tratamentos específicos), realizando pesquisas e propagando o tema. Seu perfil como educador em saúde se inicia desde mais jovem, sendo habilitado enquanto palestrante e educador no âmbito de HIV e Infecções Sexualmente Transmissíveis. Atualmente, ministra aulas em diversas faculdades de medicina e outros espaços sobre a saúde da população negra e também como professor de Clínica Médica no curso VerboMed. Por sua história e dedicação às questões raciais e sociais, foi indicado ao prêmio Faz Diferença do Jornal O Globo em 2018.</p>
-            <Button
-            size= "large" 
-            type="default"
-            href={"/about"}>Saiba mais</Button>
+            <Link to="/contato">
+              <Button type="default">Saiba mais</Button>
+            </Link> 
           </Card.Grid >
           <Card.Grid 
             hoverable={false}
