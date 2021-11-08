@@ -26,6 +26,9 @@ require("channels")
 import "bootstrap";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import 'antd/dist/antd.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';

@@ -6,10 +6,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-import 'mapbox-gl/dist/mapbox-gl.css';
-import 'antd/dist/antd.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import App from '../components/App'
 
 
