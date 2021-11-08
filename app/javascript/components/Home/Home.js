@@ -7,7 +7,7 @@ import Banner from "./Cards/Banner";
 import AboutCard from "./Cards/AboutCard";
 import FormPatient from "../Contato/Form";
 import Map from "../Map/Map";
-import Footer from '../Home/Footer'
+import Footer from '../Home/Footer';
 
 const Home = () => {
   useEffect(() => {
@@ -19,14 +19,15 @@ const Home = () => {
     <Fragment>
       <NavBar />
       <Banner/>
+      <div style={{backgroundColor: "#efefef"}}>
       <Container>
         <AboutCard />
       </Container>
+      </div>
       <FormPatient />
       <Map />
       <Footer />
-    </Fragment>
-    
+    </Fragment> 
   )
 }
 export default Home

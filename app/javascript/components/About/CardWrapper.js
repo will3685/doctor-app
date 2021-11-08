@@ -35,7 +35,6 @@ const CardWrapper = () => {
           </Card.Body>
         </Card>
         <Card style={{filter: "grayscale(100%)", backgroundImage: `url(${about})`}}>
-          <Card.Img variant="top" />
         </Card>
       </CardGroup>
     </div>
