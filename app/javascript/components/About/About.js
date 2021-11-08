@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect} from "react"
 
-import { Card, Divider } from 'antd';
+
 
 import about from "../../images/about.jpg";
 
@@ -9,6 +9,7 @@ import Map from "../Map/Map";
 import Footer from "../Home/Footer"
 import DestacaCard from "../Home/Cards/DestacaCard";
 import FormPatient from "../Contato/Form";
+import CardWrapper from "./CardWrapper";
 
 const About = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const About = () => {
   return (
     <Fragment>
       <NavBar />
+      <CardWrapper />
       <DestacaCard />
       <FormPatient />
       <Map />
