@@ -25,6 +25,7 @@ const Map = () => {
     scrollZoom={false}
     mapboxApiAccessToken={process.env.MAPBOX_API_KEY}
     onViewportChange={(viewport) => setViewport(viewport)}
+    mapStyle="mapbox://styles/will3685/ckvqslo8w0atv14kaxdj5ynrt"
   >
     <Marker
       latitude={coordonate[0]}
